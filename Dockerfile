@@ -9,7 +9,7 @@ COPY package.json package-lock.json ./
 RUN npm install --only=production
 
 # Copy application code
-COPY . ./src
+COPY . .
 
 # Stage 2: Create the final image
 FROM node:lts-alpine AS runtime
